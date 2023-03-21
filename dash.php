@@ -9,7 +9,7 @@ if($_SESSION['userdata']['is_admin']==1)
   include('header.php');
   echo '<header>
   <nav  class="navbar navbar-expand-lg">
-      <a class="navbar-brand nos" href="#">Ced<span class="gree">Cab</span></a>
+      <a class="navbar-brand nos" href="#">Go<span class="gree">Cab</span></a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span><i class="fas fa-bars logo text-dark"></i></span>
         </button>

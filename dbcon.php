@@ -21,4 +21,13 @@
     }
 
     }
+
+
+$servername = "localhost";
+$username = "root";
+$password = "";
+$dbname = "cedcab";
+ 
+ // Create connection
+$conn = new mysqli($servername,$username,$password,$dbname);
     ?>
