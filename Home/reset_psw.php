@@ -35,7 +35,7 @@ if (isset($_POST['submit'])) {
                 $mail->Host       = 'smtp.gmail.com';                     //Set the SMTP server to send through
                 $mail->SMTPAuth   = true;                                   //Enable SMTP authentication
                 $mail->Username   = 'cabbooking05@gmail.com';                     //SMTP username
-                $mail->Password   = 'hvyjmxvfpojyotdv';                                         //SMTP password
+                $mail->Password   = '';                                         //SMTP password
                 $mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;            //Enable implicit TLS encryption
                 $mail->Port       = 465;                                    //TCP port to connect to; use 587 if you have set SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS
 
@@ -228,7 +228,7 @@ li:hover{
             <?php echo $msg; ?>
                             <input type="email" id="input2" class="email" name="email" placeholder="Enter Your Email" required>
               <span class="error_form" id="captcha_message"></span>
-               
+              <div class="g-recaptcha" data-sitekey="6LcC5BwlAAAAAAy4_Tl9nUCdPSFXv5m-Q_nl0PIw"></div>
                             <button name="submit" class="btn" id="submit" type="submit">Send Reset Link</button>
                         </form>
                         <div class="social-icons">

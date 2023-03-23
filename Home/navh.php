@@ -12,6 +12,8 @@
                   <li class="nav-item rbtn">
                       <a class="btn" href="register.php">Register</a>
                   </li>
+                  <li><a class="btn" href="contact.php">Contacts</a></li>
+                  <li><a class="btn" href="driverlogin.php">Driver</a></li>
               </ul>
           </div>
       </nav>

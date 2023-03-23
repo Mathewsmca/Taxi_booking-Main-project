@@ -22,8 +22,20 @@ else {
 		include('header.php'); 
     include('navh.php'); 
  ?>
-
+<head>
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+      </head>
 <body>
+<style>
+  .error_form
+{
+  top: 12px;
+  color: rgb(216, 15, 15);
+    font-size: 15px;
+  font-weight:bold;
+    font-family: Helvetica;
+}
+  </style>
 	<div id="wrapper">
 
 	<div id="bg" class="pt-2 pb-2">
@@ -44,9 +56,12 @@ else {
               <label class="col-sm-2"  for="password">PASSWORD</label>
               <input type="password" name="password" class="form-control-plaintext col-sm-10 arro" id="password" placeholder="Enter Password" required>
 		  </div>
-		  
+      
+		  <span class="error_form" id="captcha_message"></span>
+              <div class="g-recaptcha" data-sitekey="6LcC5BwlAAAAAAy4_Tl9nUCdPSFXv5m-Q_nl0PIw"></div>
+             
 		  <div class="form-group ">
-                <input type="submit" class="btn green btn-primary btn-lg btn-block" id="login" name="submit" value="Login">
+                <input type="submit" id="submit" class="btn green btn-primary btn-lg btn-block" id="login" name="submit" value="Login">
             </div>
             <div >
               <label ><p> Forgot password ? <a href="reset_psw.php"> click me </a></p></label>
@@ -56,6 +71,35 @@ else {
     </div>
     </section>
   </div>
+  <script src="https://kit.fontawesome.com/af562a2a63.js" crossorigin="anonymous"></script>
+<script src="https://www.google.com/recaptcha/api.js" async defer></script>
+<script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+
+
+<script type="text/javascript">
+ 
+  $(document).on('click','#submit',function()
+  {  $("#captcha_message").hide();
+    var response = grecaptcha.getResponse();
+    if(response.length == 0)
+    {
+      $("#captcha_message").html("Please verify you are not a robot");
+               $("#captcha_message").show();
+      return false;
+    }
+    else{
+      $("#captcha_message").hide();
+      return true;
+    }
+  });
+  
+  
+</script>
+
+<script src="https://www.google.com/recaptcha/api.js?onload=onloadCallback&render=explicit"
+    async defer>
+</script>
+      </body>
 
     <?php include('footer.php');
   

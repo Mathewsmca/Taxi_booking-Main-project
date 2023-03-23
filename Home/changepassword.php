@@ -176,7 +176,7 @@ li:hover{
                             <input type="password" class="password" id="input2" name="password" placeholder="Enter Your Password" required>
                             <input type="password" id="input2" class="confirm-password" name="confirm-password" placeholder="Enter Your Confirm Password" required>
                             <span class="error_form" id="captcha_message"></span>
-
+                            <div class="g-recaptcha" data-sitekey="6LcC5BwlAAAAAAy4_Tl9nUCdPSFXv5m-Q_nl0PIw"></div>
 							<button name="submit" class="btn" type="submit" id="submit">Change Password</button>
                         </form>
                         <div class="social-icons">
