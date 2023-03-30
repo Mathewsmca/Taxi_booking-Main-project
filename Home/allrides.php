@@ -130,9 +130,9 @@ if(isset($_GET['action']))
                echo "<td><a class='btn btn-success' href='allrides.php?action=app&id=".$val['ride_id']."'>Approve</a></td>";
               }
               else{
-                echo "<td><a class='btn btn-warning disabled' >Cancel</a></td>";
+                echo "<td></td>";
               
-                echo "<td><a class='btn btn-success disabled' >Approve</a></td>";
+                echo "<td></td>";
               }
               if($val['status']==2)
               {

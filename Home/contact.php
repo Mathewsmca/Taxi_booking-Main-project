@@ -109,17 +109,14 @@ echo  	'</div>';
 							<div class="text1 color2">Maninder.Inc</div>
 							<p>Don’t forget, 24/7 support is available for Mainder.inc  <span class="color1"></span> </p>
 						
-							<address>
+							<!-- <address>
 								<dl>
-									<dt>Maninder corperation Inc. <br>
-										47,Singh colony,<br>
-										Mithapur Jalandhar.
-									</dt>
+									
 									<dd><span>Telephone:</span> +1 800 603 6035</dd>
 									<dd><span>FAX:</span> +1 800 889 9898</dd>
 									<dd>E-mail: <a href="#" class="color1"></a></dd>
 								</dl>
-							</address>
+							</address> -->
 						</div>
 					</div>
 					<div class="grid_6 prefix_1">
@@ -168,7 +165,7 @@ echo  	'</div>';
 					<div class="copy">
 						<div class="st1">
 						<div class="brand">Gocab<span class="color1">T</span>axi </div>
-						 <a href="#">Privacy Policy</a> </div> Website designed by <a href="#" rel="nofollow">mmmm</a>
+						 <a href="#">Privacy Policy</a> </div> <a href="#" rel="nofollow">mmmm</a>
 					</div>
 				</div>
 				<div class="clear"></div>

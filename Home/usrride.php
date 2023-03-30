@@ -143,7 +143,7 @@ include('ussidebar.php');
             
               }
               else{
-                echo "<td><a class='btn btn-warning disabled' >Cancel</a></td>";
+                echo "<td></td>";
               }
               if($val['status']==2)
               {

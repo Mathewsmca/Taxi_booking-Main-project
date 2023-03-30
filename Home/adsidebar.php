@@ -4,4 +4,5 @@
     <a href="allusers.php">Users</a>
     <a href="allrides.php">Rides</a>
     <a href="addlocation.php">Location</a>
+    <a href="feed.php">Feedback</a>
   </div>

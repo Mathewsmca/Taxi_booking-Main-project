@@ -4,25 +4,92 @@ include("dbcon.php");
 ?>
 <html>
 <head>
+
+
 	<style>
+		.container {
+  margin: 0 auto;
+  max-width: 700px;
+  background-color: #f2f2f2;
+  padding: 50px;
+  border-radius: 5px;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 36px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-size: 18px;
+}
+
+input[type="text"],
+select {
+  width: 100%;
+  height: 40px;
+  border-radius: 5px;
+  border: none;
+  padding: 5px 10px;
+  font-size: 16px;
+  color: #555;
+}
+
+input[type="radio"] {
+  margin-right: 10px;
+}
+
+span {
+  display: block;
+  margin-top: 5px;
+  font-size: 14px;
+  color: red;
+}
+
+button {
+  width: 100%;
+  height: 50px;
+  background-color: #4CAF50;
+  border: none;
+  color: #fff;
+  font-size: 18px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+button:hover {
+  background-color: #3e8e41;
+}
+
 		span{
 			color:red;
 		}
 
 		
 	</style>
+
+
+
 </head>
 <body bgcolor="#808080"> 
 <form action="driverreg_action.php"  method="post" onsubmit="return validate()">
-<div class="container" style="margin-left:180px;margin-right:200px;padding-bottom:150px;padding-top: 7%;">
+<div class="container" style="margin-left:280px;padding-bottom:150px;padding-top: 7%;">
    	<div class="row">
             <div class="col-md-11" style="box-shadow: 2px 2px 10px #000000; border-radius: 4px; background-image:url(images/about-2-720x720.jpg) ;background-repeat: no-repeat;background-size:cover ;top: 14px;">
                 <h1 style="text-align: center">Driver Registration</h1>
                
                 	<div class="form-horizontal">
 
-					<div class="form-group" style="margin-top:10px;margin-left:400px">
-                        		<label style="text-align: center">First Name</label>
+					<div class="form-group" style="margin-top:10px;margin-left:100px">
+                        		<label style="text-align:left">First Name</label>
 								<div class="form-group" style="margin-top:10px;margin-left:0px">
                            	<input type="text" id="fname" name="fname" onclick="return validate()" class="form-control" autocomplete="off" onkeyup="return validate()" onblur="return validate()" />
 	</div>
@@ -30,7 +97,7 @@ include("dbcon.php");
 								<span id="fname_error"></span>
 							</div>
                     	</div>
-						<div class="form-group" style="margin-top:10px;margin-left:400px">
+						<div class="form-group" style="margin-top:10px;margin-left:100px">
                         		<label   >Last Name</label>
 								<div class="form-group" style="margin-top:10px;margin-left:0px">
                            	<input type="text" id="lname" name="lname" onclick="return validate()"  class="form-control" autocomplete="off" onkeyup="return validate()" onblur="return validate()" />
@@ -40,7 +107,7 @@ include("dbcon.php");
 							</div>
                     	</div>
 
-                        <div class="form-group" style="margin-top:10px;margin-left:400px">
+                        <div class="form-group" style="margin-top:10px;margin-left:100px">
                         		<label  >Licence no</label>
 								<div class="form-group" style="margin-top:10px;margin-left:0px">
                          
@@ -52,7 +119,7 @@ include("dbcon.php");
                     	</div>
 
 
-						<div class="form-group" style="margin-top:10px;margin-left:400px">
+						<div class="form-group" style="margin-top:10px;margin-left:100px">
                         		
 								<label class="control-label col-sm-2" >Gender</label>
 								<div class="form-group" style="margin-top:10px;margin-left:0px">
@@ -66,7 +133,7 @@ include("dbcon.php");
 							</div>
 								  </div>
 
-								  <div class="form-group" style="margin-top:10px;margin-left:400px">
+								  <div class="form-group" style="margin-top:10px;margin-left:100px">
                         		<label class="control-label col-sm-2"  >DOB</label>
 								<div class="form-group" style="margin-top:10px;margin-left:0px">
                          
@@ -77,7 +144,7 @@ include("dbcon.php");
 							</div>
                     	</div>
 
-						<div class="form-group" style="margin-top:10px;margin-left:400px">
+						<div class="form-group" style="margin-top:10px;margin-left:100px">
                         		<label class="control-label col-sm-2"  >Select State</label>
 								<div class="form-group" style="margin-top:10px;margin-left:0px">
                        
@@ -254,7 +321,7 @@ include("dbcon.php");
                          </div>
                          		<div class="col-sm-6">
 
-					<p>Already have an account? <a href="driverlogin.php">login now</a></p>
+					<p>Already have an account? <a href="driverlogin1.php">login now</a></p>
 </div>
 </div>
 

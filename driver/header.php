@@ -1,6 +1,6 @@
 <?php
-include("auth_driver.php");
-include('dbcon.php');
+include("../Home/auth_driver.php");
+include('../Home/dbcon.php');
 $details=mysqli_query($conn,"SELECT * FROM tbl_driver WHERE driver_id='$login_id'");
 if($details)
 {

@@ -92,7 +92,7 @@ include('ussidebar.php');
             <th>Status</th>
             <th>User id</th>
             <th>Invoice</th>
-            <th>Review</th>
+            <!-- <th>Review</th> -->
         </thead>
         <tbody id="tbl4c">
         <?php 

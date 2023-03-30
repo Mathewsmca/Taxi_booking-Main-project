@@ -12,7 +12,7 @@
 
     function __construct(){
 
-    $this->conn = new mysqli("localhost", "root", "", "cedcab");
+    $this->conn = new mysqli("localhost", "root", "", "cab");
        
 
     if ($this->conn->connect_error) {
@@ -26,7 +26,7 @@
 $servername = "localhost";
 $username = "root";
 $password = "";
-$dbname = "cedcab";
+$dbname = "cab";
  
  // Create connection
 $conn = new mysqli($servername,$username,$password,$dbname);

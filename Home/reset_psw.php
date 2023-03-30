@@ -35,7 +35,7 @@ if (isset($_POST['submit'])) {
                 $mail->Host       = 'smtp.gmail.com';                     //Set the SMTP server to send through
                 $mail->SMTPAuth   = true;                                   //Enable SMTP authentication
                 $mail->Username   = 'cabbooking05@gmail.com';                     //SMTP username
-                $mail->Password   = '';                                         //SMTP password
+                $mail->Password   = 'hvyjmxvfpojyotdv';                                         //SMTP password
                 $mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;            //Enable implicit TLS encryption
                 $mail->Port       = 465;                                    //TCP port to connect to; use 587 if you have set SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS
 
@@ -46,7 +46,7 @@ if (isset($_POST['submit'])) {
                 //Content
                 $mail->isHTML(true);                                  //Set email format to HTML
                 $mail->Subject = 'no reply';
-                $mail->Body    = 'Here is the verification link <b><a href="http://localhost/cab/changepassword.php?reset='.$code.'">http://localhost/cab/changepassword.php?reset='.$code.'</a></b>';
+                $mail->Body    = 'Here is the verification link <b><a href="http://localhost/cab/Home/changepassword.php?reset='.$code.'">http://localhost/cab//Home/changepassword.php?reset='.$code.'</a></b>';
 
                 $mail->send();
                 echo 'Message has been sent';
@@ -69,7 +69,7 @@ if (isset($_POST['submit'])) {
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>   njnj</title>
+  <title>Reset password</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
 
@@ -105,81 +105,157 @@ if (isset($_POST['submit'])) {
   ======================================================== -->
   
   <style>
-#input,#submit,#captcha_message,#captcha{
-  width:94.5%;
-  margin-left:10px;
-  box-sizing: border-box;
-  margin-top:10px;
+/* Header styles */
+#header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.8);
+  z-index: 9999;
 }
 
-#input2{
-  margin-bottom:5px;
-  width:94.5%;
-  margin-left:10px;
-    font-size: 16px;
-    color: #999;
-    text-align: left;
-    padding: 14px 20px;
-    display: inline-block;
-    border: none;
-    outline: none;
-    border: 1px solid #e5e5e5;
-    transition: 0.3s all ease;
-}
-#submit{
-  background-color:#0033c4;
-  color:#ffff;
-  height:56px;
-}
-#submit:hover{
-  background-color:#0c2772;
-    color:#ffff;
+#header .logo {
+  margin: 10px;
 }
 
-.error_form
-{
-  top: 12px;
-  color: rgb(216, 15, 15);
-    font-size: 15px;
-  font-weight:bold;
-    font-family: Helvetica;
-}
-.btn1{
-  background:transparent;
+.nav-link.scrollto {
+  display: inline-block;
   border: none;
+  background-color: #28a745;
+  color: #43ec6a;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 5px;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.nav-link.scrollto:hover {
+  background-color: #218838;
+}
+
+
+
+.blink p:hover {
+  background-color: #0069d9;
+}
+
+
+
+
+#header #navbar ul {
+  display: flex;
+  justify-content: flex-end;
+  list-style: none;
+}
+
+#header #navbar li {
+  margin: 10px;
+}
+
+#header #navbar a {
+  display: block;
+  padding: 10px;
+  color: blue;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+#header #navbar a:hover {
+  text-decoration: underline;
+}
+
+/* Hero section styles */
+#hero {
+  background-color: #f8f9fa;
+  padding: 100px 0;
+}
+
+#hero .hero-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#hero .card {
+  background-color: white;
+  box-shadow: 0px 0px 10px rgb(196 15 15);
+  border-radius: 5px;
+}
+
+#hero form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 50px;
+}
+
+#hero .email {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  border: 2px solid #ccc;
+  font-size: 16px;
+}
+
+#hero .btn {
+  background-color: blue;
   color: white;
-  padding: 12px 16px;
+  padding: 10px 20px;
+  border-radius: 5px;
   font-size: 16px;
   cursor: pointer;
 }
-li:hover{
-  color:red;
+
+#hero .btn:hover {
+  background-color: darkblue;
 }
 
-.notify{
-  color:#25ff00;
-  font-weight:bold;
-}
-.blink {
-  animation: blink 1s infinite;
-  background-color:blue;
-  border-radius:2px;
-  margin-left:10px;
- max-width:94.5%;
-  text-align:center;
- padding:4px;
- color:#ffff;
-
+#hero .social-icons {
+  margin-top: 20px;
 }
 
-@keyframes blink {
-  50% {
-    opacity: 0.1;
+#hero .social-icons a {
+  color: blue;
+  text-decoration: none;
+  margin-right: 10px;
+  font-size: 16px;
+}
+
+#hero .social-icons a:hover {
+  text-decoration: underline;
+}
+
+/* Running notification styles */
+.notify {
+  margin: 0;
+  font-size: 16px;
+  font-weight: bold;
+  color: blue;
+  padding: 10px;
+}
+
+@media (max-width: 768px) {
+  #header .logo {
+    margin: 10px 0;
   }
-}
-#blink{
-   font-weight: 500;
- font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen,Ubuntu,Cantarell,"Fira Sans","Droid Sans","Helvetica Neue",sans-serif;
+
+  #header #navbar ul {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+  }
+
+  #header #navbar li {
+    margin: 10px 0;
+  }
 }
 
 </style>
@@ -222,7 +298,7 @@ li:hover{
           <div class="card-body" style="width:40%; margin:auto;"><br>
                        
              <div class="blink">
-  <p id="">Reset Password</p>
+  <p id=""><center><h1>Reset Password</h1></center></p>
 </div><br>
                         <form action="" id="login_form"  method="post">
             <?php echo $msg; ?>

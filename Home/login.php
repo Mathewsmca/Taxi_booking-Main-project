@@ -1,5 +1,18 @@
 <?php
+ include ('config.php'); 
+
       session_start();
+
+      if (isset($_GET['verification'])) {
+        
+            $sql = "UPDATE user SET code='' WHERE code='{$_GET['verification']}'";
+            $result = $conn->query($sql);
+            if($result){
+              echo '<p class="bg-success text-center">Account verification has been successfully completed.</p>';
+               
+               }
+       } 
+    
 if(isset($_SESSION['userdata'])){
   header("location: index.php");
 }
@@ -42,7 +55,7 @@ else {
     <h1 class="text-center mt-lg-5 pt-lg-5 mt-sm-0 pt-sm-0 font-weight-bold">Go<span class="gree">Cab</span></h1>
 
     <section class="container-fluid box col-lg-10 col-sm-10 col-xs-12 col-md-7  pt-lg-4 mt-lg-4 pt-sm-0 mt-sm-0 mb-5 pb-3 pt-2">
-      <div class="text-center">
+    <div class="text-center">
         <h4 class="font-weight-bold">Login Here</h4>
       </div>
         <form action="login.php" method="post">

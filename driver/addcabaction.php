@@ -1,5 +1,5 @@
 <?php
-include("dbconn.php");
+include("../Home/dbcon.php");
 if(isset($_POST["submit"]))
 {
 $cab=$_POST['txt_cab'];

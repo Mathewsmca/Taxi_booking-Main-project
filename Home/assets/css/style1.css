@@ -1,0 +1,103 @@
+/* apply box-sizing border-box to all elements */
+
+* {
+    box-sizing: border-box;
+}
+
+
+/* set default margin and padding to 0 for body element */
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+
+/* apply background color to body element */
+
+body {
+    background-color: #808080;
+}
+
+
+/* center container horizontally and vertically */
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* apply styles to form */
+
+form {
+    width: 100%;
+    margin-left: 0%;
+    margin-bottom: 14%;
+    padding-top: 8%;
+    background-image: url(images/about-2-720x720.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+/* apply styles to heading */
+
+h2 {
+    text-align: center;
+    margin-top: 6%;
+    text-decoration: underline;
+}
+
+
+/* apply styles to label */
+
+label {
+    text-align: left;
+    display: inline-block;
+    width: 30%;
+}
+
+
+/* apply styles to input fields */
+
+input[type="email"],
+input[type="password"] {
+    width: 500px;
+    padding: 12px;
+    border-radius: 4px;
+    border: none;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+
+/* apply styles to submit button */
+
+input[type="submit"] {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    padding: 12px 24px;
+    cursor: pointer;
+    margin-left: 55%;
+}
+
+
+/* apply styles to link */
+
+a {
+    color: #007bff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+
+/* apply styles to link on hover */
+
+a:hover {
+    text-decoration: underline;
+}

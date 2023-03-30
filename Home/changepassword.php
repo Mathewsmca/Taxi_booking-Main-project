@@ -37,8 +37,8 @@ if (isset($_GET['reset'])) {
   <meta content="" name="keywords">
 
   <!-- Favicons -->
-<link rel="icon" type="image/png" href="favicons/favicon-16x16.png" sizes="16x16">
-  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+<link rel="icon" type="image/png" href="favicons/favicon-16x16.png">
+  <link href="assets/img/cab1.jpg" rel="apple-touch-icon">
 
   <!-- Google Fonts -->
   <!-- chat bot css-->
@@ -120,7 +120,7 @@ li:hover{
 }
 
 .notify{
-	color:#25ff00;
+	color:#0000ff;
 	font-weight:bold;
 }
 </style>
@@ -141,7 +141,7 @@ li:hover{
         <ul>
 		
           <li><a class="nav-link scrollto" href="index.php">Home</a></li>
-         <li><a href="#">&nbsp;</a></li>
+         <!-- <li><a href="#">&nbsp;</a></li> -->
          
         </ul>
        
@@ -170,7 +170,7 @@ li:hover{
 		<div class="card" style="width:130%;">
           <div class="card-body" ><br>
                        
-					   <img src="forgot.gif" style="width:45%; margin-left:30%; margin-bottom:5%;" alt="login">
+					   <img src="cab1.jpg" style="width:40%; margin-left:10%; margin-bottom:1%;" alt="login">
                        <form action="" method="post">
 					      <?php echo $msg; ?>
                             <input type="password" class="password" id="input2" name="password" placeholder="Enter Your Password" required>

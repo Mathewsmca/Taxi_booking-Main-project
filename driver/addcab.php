@@ -3,12 +3,12 @@
 <html>
 <head>
 <meta charset="utf-8">
-<title>Untitled Document</title>
+<title>Cab add</title>
 </head>
 
 <body bgcolor="#808080">
 <?php
-include("dbconn.php");
+include("../Home/dbcon.php");
 ?>
 <form action="addcabaction.php" method="post" enctype="multipart/form-data" style=" padding-top: 8%;background-color:#909090;"style="margin-left:93px; margin-bottom:10%;padding-left:130px; box-shadow: 2px 2px 10px #1b93e1; border-radius: 4px; top: 14px; padding-top: 3%;">
         <h2 style="text-align: center;margin-top: 6%;">CAB REGISTRATION</h2>
@@ -19,7 +19,7 @@ include("dbconn.php");
       </div>
       <div >
        <?php
-	   include("dbconn.php");
+	   include("../Home/dbcon.php");
   $sql=mysqli_query($conn,"select * from tbl_model");?>
   <select name="txt_si_no"  class="form-control" style="width:500px;" required>
     <option value="">---Select---</option>

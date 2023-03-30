@@ -31,7 +31,8 @@ class user{
              if ($result->num_rows > 0) {
  
                  while($row = $result->fetch_assoc()){
-                     
+                    if ($row['code']=='') {
+                  
                      if ($row['is_admin']==1){
 
                      $_SESSION['userdata'] = array('username'=>$row['name'],'user_id'=>$row['user_id'],'is_admin'=>$row['is_admin']);
@@ -69,6 +70,15 @@ class user{
                         
                        
                      }
+
+
+                   
+                       
+                     } 
+                  else {
+                        
+                         echo '<p class="bg-danger text-center">First verify your account and try again.</p>';
+                  }
                      
                  } 
              }
@@ -84,7 +94,7 @@ class user{
          
     }
 
-    function register($username,$password,$password2,$email,$mobile,$datetime,$conn)
+    function register($username,$password,$password2,$email,$mobile,$datetime,$code,$conn)
      {
         $message = '';
         $errors=array();
@@ -109,11 +119,10 @@ class user{
         {
             setcookie("email", $email, time() + 60 * 60 * 24);
             $password = md5($password);
-            $sql = "INSERT INTO user(`name`, `password`, `user_name`,`mobile`,`dateofsignup`,`isblock`,`is_admin`) VALUES('".$username."', '".$password."', '".$email."', '".$mobile."', '".$datetime."',0, 0)";
+            $sql = "INSERT INTO user(`name`, `password`, `user_name`,`mobile`,`dateofsignup`,`isblock`,`is_admin`,`code`) VALUES('".$username."', '".$password."', '".$email."', '".$mobile."', '".$datetime."',0,0,'".$code."')";
 
             if ($conn->query($sql) === true) {
-                echo '<script>alert("Registration Successful, Going to Login Page");
-                     window.location.href = "login.php";</script>';
+                echo '<p class="bg-success text-center">We have send a verification link on your email address.</p>';
             }
              else {
                // $errors[] = array('input'=>'form','msg'=>$conn->errors);
