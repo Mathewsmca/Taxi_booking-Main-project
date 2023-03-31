@@ -1,7 +1,7 @@
 <?php
 include("../Home/auth_driver.php");
 include('../Home/dbcon.php');
-$details=mysqli_query($conn,"SELECT * FROM tbl_driver WHERE driver_id='$login_id'");
+$details=mysqli_query($conn,"SELECT * FROM driver WHERE driver_id='$login_id'");
 if($details)
 {
 $profile=mysqli_fetch_array($details);

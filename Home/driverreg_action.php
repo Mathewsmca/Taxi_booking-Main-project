@@ -18,7 +18,7 @@ if(isset($_POST["btnSave"]))
 	$password=mysqli_real_escape_string($db,md5($_POST["password"]));
 	
 	
-$save=mysqli_query($conn,"INSERT INTO `tbl_driver`(`fname`, `lname`,`licno`, `gender`, `dob`, `state`, `district`, `address1`, `address2`, `address3`, `pin`, `phone`, `email`, `password`) VALUES ('$fname','$lname','$lino','$gender','$dob','$state','$district','$address1','$address2','$address3','$pin','$phone','$email','$password')");
+$save=mysqli_query($conn,"INSERT INTO `driver`(`fname`, `lname`,`licno`, `gender`, `dob`, `state`, `district`, `address1`, `address2`, `address3`, `pin`, `phone`, `email`, `password`) VALUES ('$fname','$lname','$lino','$gender','$dob','$state','$district','$address1','$address2','$address3','$pin','$phone','$email','$password')");
 
 
 
