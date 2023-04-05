@@ -60,12 +60,12 @@ if (isset($_GET['reset'])) {
 	
 
   
-  <!-- =======================================================
+  <!-- ==================================================
   * Template Name: Bootslander - v4.9.1
   * Template URL: https://bootstrapmade.com/bootslander-free-bootstrap-landing-page-template/
   * Author: BootstrapMade.com
-  * License: https://bootstrapmade.com/license/
-  ======================================================== -->
+  * License: https://bootstrapmade.com/license
+======================================================== -->
   
   <style>
 #input,#submit,#captcha_message,#captcha{
@@ -163,7 +163,6 @@ li:hover{
           <div data-aos="zoom-out" >
 	<img src="images/icon1.png" style="width:100px; height:85px;" alt="Sports"><img src="images/lion.png" style="width:100px; height:85px;" alt="Sports">
             <h1 style="font-size:20px;">Election Commission Of India<br> Legislative Assembly Election Portal</h1>
-            
           </div>
         </div> -->
         <div class="col-lg-4 order-1 order-lg-2 hero-img" data-aos="zoom-out" data-aos-delay="300">

@@ -97,12 +97,12 @@ if (isset($_POST['submit'])) {
   
 
   
-  <!-- =======================================================
+  <!-- ====================================================
   * Template Name: Bootslander - v4.9.1
   * Template URL: https://bootstrapmade.com/bootslander-free-bootstrap-landing-page-template/
   * Author: BootstrapMade.com
   * License: https://bootstrapmade.com/license/
-  ======================================================== -->
+======================================================== -->
   
   <style>
 /* Header styles */
