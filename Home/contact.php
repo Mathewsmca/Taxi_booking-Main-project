@@ -72,7 +72,7 @@ echo  	'</div>';
 								<ul class="sf-menu">
 									<li><a href="index.php">Home</a></li>
 									
-									<li><a href="car.php">Cars</a></li>
+									<!-- <li><a href="car.php">Cars</a></li> -->
 									<li class="current"><a href="contact.php">Contacts</a></li>
 								</ul>
 							</nav>
@@ -106,8 +106,8 @@ echo  	'</div>';
 					<div class="grid_5">
 						<h3>Contact Info</h3>
 						<div class="map">
-							<div class="text1 color2">Maninder.Inc</div>
-							<p>Don’t forget, 24/7 support is available for Mainder.inc  <span class="color1"></span> </p>
+							<div class="text1 color2">Go cab services</div>
+							<p>Don’t forget, 24/7 support is available  <span class="color1"></span> </p>
 						
 							<!-- <address>
 								<dl>
@@ -156,7 +156,7 @@ echo  	'</div>';
 		<footer>
 			<div class="container_12">
 				<div class="grid_12">
-					<div class="f_phone"><span>Call Us:</span> + 1800 559 6580</div>
+					<div class="f_phone"><span>Call Us:</span></div>
 					<div class="socials">
 						<a href="#" class="fa fa-twitter"></a>
 						<a href="#" class="fa fa-facebook"></a>
