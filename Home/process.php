@@ -25,7 +25,7 @@ $dist=0;
 $dist = abs($d1-$d2);
 $fare=0;
 $tdist=$dist;
-if($cabtype =='CedMicro'){
+if($cabtype =='Micro'){
     if($dist<=10){
         $fare=50+(13.50*$dist);
     }
@@ -42,7 +42,7 @@ if($cabtype =='CedMicro'){
         $fare=1805+(8.50*$tdist);
     }
 }
-if($cabtype =='CedMini'){
+if($cabtype =='Mini'){
     if($dist<=10){
         $fare=150+(14.50*$dist);
     }
@@ -59,7 +59,7 @@ if($cabtype =='CedMini'){
         $fare=2065+(9.50*$tdist);
     }
 }
-if($cabtype =='CedRoyal'){
+if($cabtype =='Royal'){
     if($dist<=10){
         $fare=200+(15.50*$dist);
     }
@@ -76,7 +76,7 @@ if($cabtype =='CedRoyal'){
         $fare=2275+(10.50*$tdist);
     }
 }
-if($cabtype =='CedSUV'){
+if($cabtype =='SUV'){
     if($dist<=10){
         $fare=250+(16.50*$dist);
     }
@@ -94,7 +94,7 @@ if($cabtype =='CedSUV'){
     }
 }
 if($lugg>0){
-    if($cabtype=='CedSUV'){
+    if($cabtype=='SUV'){
         if($lugg<=10){
             $fare= $fare+100;
         }
