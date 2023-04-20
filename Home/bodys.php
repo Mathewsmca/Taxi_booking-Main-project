@@ -56,10 +56,10 @@ if(isset($_SESSION['book'])){
             <select  class="form-control-plaintext col-sm-9 arro" id="cabtype">
               <option value=""  selected disabled hidden>Drop down to select CAB type</option>
               <option <?php if(isset($id)){ echo "value= ".$c; } ?> hidden><?php if(isset($c)){ echo $c; } ?></option>
-              <option value="CedMicro" <?php if(isset($c)){ if($c== 'CedMicro') { ?>selected<?php } }?>>Micro</option>
-              <option value="CedMini" <?php if(isset($c)){ if($c== 'CedMini') { ?>selected<?php } }?>>Mini</option>
-              <option value="CedRoyal" <?php if(isset($c)){ if($c== 'CedRoyal') { ?>selected<?php } }?>>Royal</option>
-              <option value="CedSUV" <?php if(isset($c)){ if($c== 'CedSUV') { ?>selected<?php } }?>>SUV</option>
+              <option value="Micro" <?php if(isset($c)){ if($c== 'Micro') { ?>selected<?php } }?>>Micro</option>
+              <option value="Mini" <?php if(isset($c)){ if($c== 'Mini') { ?>selected<?php } }?>>Mini</option>
+              <option value="Royal" <?php if(isset($c)){ if($c== 'Royal') { ?>selected<?php } }?>>Royal</option>
+              <option value="SUV" <?php if(isset($c)){ if($c== 'SUV') { ?>selected<?php } }?>>SUV</option>
             </select>
         </div>
         <p id="ec" class="bg-danger text-center">Enter Cabtype</p>

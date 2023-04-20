@@ -52,10 +52,10 @@
             <label class="col-sm-3"  for="cabtype">CAB TYPE</label>
             <select name="cabtype"  class="form-control-plaintext col-sm-9 arro" id="cabtype">
               <option value=""  selected disabled hidden>Drop down to select CAB type</option>
-              <option value="CedMicro">Micro</option>
-              <option value="CedMini">Mini</option>
-              <option value="CedRoyal">Royal</option>
-              <option value="CedSUV">SUV</option>
+              <option value="Micro">Micro</option>
+              <option value="Mini">Mini</option>
+              <option value="Royal">Royal</option>
+              <option value="SUV">SUV</option>
             </select>
         </div>
         <p id="ec" class="bg-danger text-center">Enter Cabtype</p>
