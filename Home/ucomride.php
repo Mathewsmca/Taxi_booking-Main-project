@@ -29,7 +29,7 @@ include('adminwrk.php');
       </nav>
   </header>
   <?php
-    echo '<h1 class="text-center text-weight-bold text-dark">ADMIN can not Enter User Area</h1>';
+    echo '<h1 class="text-center text-weight-bold text- dark">ADMIN can not Enter User Area</h1>';
 }
 else {
 include('user.php'); 
